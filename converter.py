@@ -7,7 +7,7 @@ TargetFolder="/
 for file in os.listdir(SourceFolder):
     if 'HEIC' in file:
         SourceFile=SourceFolder + "/" + file
-        TargetFile=TargetFolder + "/" + file.replace(".HEIC",".JPG")
+        TargetFile=TargetFolder + "/" + file.replace(".HEIC",".jpg")
 
         img=Image(filename=SourceFile)
         img.format='jpg'
